@@ -1,16 +1,9 @@
-# This is a sample Python script.
+import numpy as np
+import math
+import pandas as pd
+from Flights import FlightRecord, Flight, load_csv, Generate_Flights
 
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Cargar todos los records del CSV y generar flights
+records = load_csv("P3_04h_08h.csv")
+Flights = Generate_Flights(records)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
