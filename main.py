@@ -4,6 +4,7 @@ import pandas as pd
 from Flights import FlightRecord, Flight, load_csv, Generate_Flights, AddCoords
 from FlightPlan import FlightPlan, load_flightplan, obtain_callsigns, filter_flight, read_sids
 from Asterix_pos import Calc_Stereographical_Coords, ExtractLatLonAlt, AddAsterixCSV
+from Separation import get_consecutive_flights, calculate_separation
 
 # Cargar todos los records del CSV y generar flights
 records = load_csv("P3_04h_08h.csv")
@@ -21,5 +22,16 @@ stereographCoord = Calc_Stereographical_Coords(latv,lonv,altv)
 AddCoords(records, stereographCoord)
 AddAsterixCSV("P3_04h_08h.csv", stereographCoord)
 
+pairs = get_consecutive_flights(flight_plans)
+flights_dict = {f.callsign: f for f in filtered_flights}
+print(f"Total de vuelos con datos radar: {len(flights_dict)}")
 
+all_separations = []
+for leader_fp, follower_fp in pairs:
+    if leader_fp.callsign in flights_dict and follower_fp.callsign in flights_dict:
+        leader_flight = flights_dict[leader_fp.callsign]
+        follower_flight = flights_dict[follower_fp.callsign]
+        separation = calculate_separation(leader_fp, follower_fp,leader_flight, follower_flight)
+        all_separations.append(separation)
 
+print(vars(all_separations[0]))
