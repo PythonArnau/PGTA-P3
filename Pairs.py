@@ -6,13 +6,17 @@ class Parameters:
         self.leader: str = ""
         self.follower: str = ""
         self.runway: str = ""
+        self.distTWR: float = 0.0
+        self.TWR_dist_diff: float = 0.0
+        self.TWR_alt_diff: float = 0.0
         self.geometric_values: list[subParameters] = []
 
 class subParameters:
     def __init__(self):
+        self.time: float = 0.0
         self.distance_nm: float = 0.0
         self.altitude_diff: float = 0.0
-        self.distance_leader_tower_nm: float = 0.0
+        self.distance_follower_tower_nm: float = 0.0
         self.ahead_or_behind_tower: str = ""
 
 def LeaderFollower(flights):
@@ -49,6 +53,7 @@ def LeaderFollower(flights):
 def GetParameteres(pairs, TWR06, TWR24):
     all_pairs = []
     for p in pairs:
+        First = True
         param = Parameters()
         param.pair = p[0].callsign + "-" + p[1].callsign
         param.leader = p[0].callsign
@@ -81,43 +86,66 @@ def GetParameteres(pairs, TWR06, TWR24):
                 TWRx = TWR06[0].x
                 TWRy = TWR06[0].y
 
-                d_xx = TWRx - actual_leader_x
+                d_xx = TWRx - x_follower
 
-                if TWRx > actual_leader_x:
+                if TWRx > x_follower:
                     status = "BEHIND"
                 else:
                     status = "AHEAD"
 
-                d_yy = TWRy - actual_leader_y
+                d_yy = TWRy - y_follower
 
                 dist_mT = np.sqrt(d_xx ** 2 + d_yy ** 2)
                 dist_nmT = dist_mT / 1852
+
+                if dist_nmT >= 0.5 and status == "AHEAD" and First:
+                    distTWRcalc = dist_nmT
+                    TWR_hor_sep = dist_nm
+                    TWR_alt_diff = d_h
+                    First = False
+
 
             elif p[0].runway == "LEBL-24L":
                 TWRx = TWR24[0].x
                 TWRy = TWR24[0].y
 
-                d_xx = TWRx - actual_leader_x
+                d_xx = TWRx - x_follower
 
-                if TWRx < actual_leader_x:
+                if TWRx < x_follower:
                     status = "BEHIND"
                 else:
                     status = "AHEAD"
 
-                d_yy = TWRy - actual_leader_y
+                d_yy = TWRy - y_follower
 
                 dist_mT = np.sqrt(d_xx ** 2 + d_yy ** 2)
                 dist_nmT = dist_mT / 1852
 
+                if dist_nmT >= 0.5 and status == "AHEAD" and First:
+                    distTWRcalc = dist_nmT
+                    TWR_hor_sep = dist_nm
+                    TWR_alt_diff = d_h
+                    First = False
+
             sub = subParameters()
+            sub.time = float(time_follower)
             sub.distance_nm = float(dist_nm)
-            sub.distance_leader_tower_nm = float(dist_nmT)
+            sub.distance_follower_tower_nm = float(dist_nmT)
             sub.altitude_diff = float(d_h)
             sub.ahead_or_behind_tower = status
             param.geometric_values.append(sub)
+        
+        param.distTWR = float(distTWRcalc)
+        param.TWR_dist_diff = float(TWR_hor_sep)
+        param.TWR_alt_diff = float(TWR_alt_diff)
+
         all_pairs.append(param)
 
     return all_pairs
+
+
+        
+
 
 
 
