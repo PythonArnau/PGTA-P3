@@ -7,6 +7,7 @@ from FlightPlan import FlightPlan, load_flightplan, obtain_callsigns, filter_fli
 from Asterix_pos import Calc_Stereographical_Coords, ExtractLatLonAlt, AddAsterixCSV, TowerCoords
 from Separation import get_consecutive_flights, calculate_separation
 from Pairs import LeaderFollower, GetParameteres
+from Loss_of_separation import radar
 
 # Cargar todos los records del CSV y generar flights
 records = load_csv("P3_04h_08h.csv")
@@ -37,6 +38,7 @@ TWR24L = TowerCoords(latTWR24, lonTWR24)
 #nueva función para calcular las pairs en funcion de departure time y pista
 pairs2 = LeaderFollower(filtered_flights)
 distances_pairs = GetParameteres(pairs2, TWR06R, TWR24L)
+radar_separation_check = radar(distances_pairs)
 
 #manera antigua de calcular las pairs
 pairs = get_consecutive_flights(flight_plans)
