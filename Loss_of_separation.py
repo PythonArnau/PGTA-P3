@@ -156,9 +156,7 @@ def wake(flights):
     return results
 
 def export_losses_to_csv(radar_results, wake_results, filename="infraciones_separacion.csv"):
-    data_for_csv = []
-
-    # Combinamos ambos resultados para procesarlos
+    min_losses = {}
     all_results = [
         ("RADAR", radar_results),
         ("WAKE", wake_results)
@@ -166,21 +164,24 @@ def export_losses_to_csv(radar_results, wake_results, filename="infraciones_sepa
 
     for category, results in all_results:
         for entry in results:
-            # Determinamos qué detalles mirar (TMA o TWR)
-            # Priorizamos TMA por ser más general, o puedes combinarlos todos
-            details_list = entry.tma_details + entry.twr_details + \
-                          entry.tma_wake_details + entry.twr_wake_details
+            details = (entry.tma_details + entry.twr_details +
+                       entry.tma_wake_details + entry.twr_wake_details)
 
-            for loss in details_list:
-                data_for_csv.append({
-                    "Tipo_Infraccion": category,
-                    "Par_Vuelos": entry.pair,
-                    "Pista": entry.runway,
-                    "Tiempo_s": loss.time,
-                    "Distancia_NM": round(loss.horizontal_separation_nm, 3),
-                    "Altitud_ft": loss.altitude_separation_ft,
-                    "Detalle": loss.loss_details
-                })
+            for loss in details:
+                key = (category, entry.pair)
+                dist = loss.horizontal_separation_nm
+
+                if key not in min_losses or dist < min_losses[key]['Distancia_NM']:
+                    min_losses[key] = {
+                        "Tipo_Infraccion": category,
+                        "Par_Vuelos": entry.pair,
+                        "Pista": entry.runway,
+                        "Tiempo_s": loss.time,
+                        "Distancia_NM": dist,
+                        "Altitud_ft": loss.altitude_separation_ft,
+                        "Detalle": loss.loss_details
+                    }
+    data_for_csv = list(min_losses.values())
 
     # Creamos el DataFrame y exportamos
     if data_for_csv:
