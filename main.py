@@ -7,7 +7,7 @@ from FlightPlan import FlightPlan, load_flightplan, obtain_callsigns, filter_fli
 from Asterix_pos import Calc_Stereographical_Coords, ExtractLatLonAlt, AddAsterixCSV, TowerCoords
 from Separation import get_consecutive_flights, calculate_separation
 from Pairs import LeaderFollower, GetParameteres
-from Loss_of_separation import radar
+from Loss_of_separation import radar, wake, export_losses_to_csv
 
 # Cargar todos los records del CSV y generar flights
 records = load_csv("P3_04h_08h.csv")
@@ -18,7 +18,6 @@ stereographCoord = Calc_Stereographical_Coords(latv,lonv,altv)
 AddCoords(records, stereographCoord)
 AddAsterixCSV("P3_04h_08h.csv", stereographCoord)
 
-print(vars(records[0]))
 Flights = Generate_Flights(records)
 
 # Cargar planes de vuelo y eliminar vuelos que no hayan salido de LEBL
@@ -39,7 +38,10 @@ TWR24L = TowerCoords(latTWR24, lonTWR24)
 pairs2 = LeaderFollower(filtered_flights)
 distances_pairs = GetParameteres(pairs2, TWR06R, TWR24L)
 radar_separation_check = radar(distances_pairs)
+wake_separation_check = wake(distances_pairs)
+export_losses_to_csv(radar_separation_check, wake_separation_check)
 
+"""
 #manera antigua de calcular las pairs
 pairs = get_consecutive_flights(flight_plans)
 flights_dict = {f.callsign: f for f in filtered_flights}
@@ -53,4 +55,4 @@ for leader_fp, follower_fp in pairs:
         separation = calculate_separation(leader_fp, follower_fp,leader_flight, follower_flight, TWR06R, TWR24L)
         all_separations.append(separation)
 
-print(vars(all_separations[0]))
+print(vars(all_separations[0]))"""

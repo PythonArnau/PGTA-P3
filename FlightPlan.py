@@ -12,7 +12,7 @@ class FlightPlan:
         self.route: str = ""
         self.aircraft: str = ""
         self.wake: str = ""
-        self.wake_recar: str = ""
+        self.wake_recat: str = ""
         self.sid: str = ""
         self.runway: str = ""
         self.sid_group: str = ""
@@ -76,7 +76,7 @@ def load_flightplan(file_path: str, sids24, sids06):
         fp.route = str(row['RutaSACTA']).strip()
         fp.aircraft = str(row['TipoAeronave']).strip()
         fp.wake = str(row['Estela']).strip()
-        fp.wake_recar = str(row['EstelaRECAT']).strip()            
+        fp.wake_recat = str(row['EstelaRECAT']).strip()
         fp.runway = str(row['PistaDesp']).strip()
         #print(repr(fp.runway))
         #print(repr(str(row['ProcDesp']).strip()))
@@ -168,7 +168,7 @@ def filter_flight(flights_vec, flight_plans):
     sids = {fp.callsign: fp.sid for fp in flight_plans}
     sid_groups = {fp.callsign: fp.sid_group for fp in flight_plans}
     wakes = {fp.callsign: fp.wake for fp in flight_plans}
-    wake_recars = {fp.callsign: fp.wake_recar for fp in flight_plans}
+    wake_recats = {fp.callsign: fp.wake_recat for fp in flight_plans}
 
     for f in flights_vec:
         cs = f.callsign
@@ -180,7 +180,7 @@ def filter_flight(flights_vec, flight_plans):
             f.runway = runways[cs]
             f.sid_group = sid_groups[cs]
             f.wake = wakes[cs]
-            f.wake_recar = wake_recars[cs]
+            f.wake_recat = wake_recats[cs]
 
             filt_flights_vec.append(f)
     return filt_flights_vec
