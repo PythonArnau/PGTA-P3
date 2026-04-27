@@ -1,4 +1,5 @@
 import numpy as np
+from scipy import interpolate
 
 class Parameters:
     def __init__(self):
@@ -66,74 +67,83 @@ def GetParameteres(pairs, TWR06, TWR24):
         h_ft_leader = [rec.h_ft for rec in p[0].records]
 
         for f_rec in p[1].records:
-            time_follower = f_rec.ToD
-            x_follower = f_rec.x
-            y_follower = f_rec.y
-            h_follower = f_rec.h_ft
+            #if f_rec.ToD <= time_leader[-1]:
+                time_follower = f_rec.ToD
+                x_follower = f_rec.x
+                y_follower = f_rec.y
+                h_follower = f_rec.h_ft
 
-            actual_leader_x = np.interp(time_follower, time_leader, x_leader)
-            actual_leader_y = np.interp(time_follower, time_leader, y_leader)
-            actual_leader_h = np.interp(time_follower, time_leader, h_ft_leader)
+                #actual_leader_x = np.interp(time_follower, time_leader, x_leader)
+                #actual_leader_y = np.interp(time_follower, time_leader, y_leader)
+                #actual_leader_h = np.interp(time_follower, time_leader, h_ft_leader)
 
-            d_x = actual_leader_x - x_follower
-            d_y = actual_leader_y - y_follower
-            d_h = abs(actual_leader_h - h_follower)
+                f_x = interpolate.interp1d(time_leader, x_leader, fill_value="extrapolate", kind='linear')
+                f_y = interpolate.interp1d(time_leader, y_leader, fill_value="extrapolate", kind='linear')
+                f_z = interpolate.interp1d(time_leader, h_ft_leader, fill_value='extrapolate', kind='linear')
 
-            dist_m = np.sqrt(d_x ** 2 + d_y ** 2)
-            dist_nm = dist_m / 1852
+                actual_leader_x = f_x(time_follower)
+                actual_leader_y = f_y(time_follower)
+                actual_leader_h = f_z(time_follower)
 
-            if p[0].runway == "LEBL-06R":
-                TWRx = TWR06[0].x
-                TWRy = TWR06[0].y
+                d_x = actual_leader_x - x_follower
+                d_y = actual_leader_y - y_follower
+                d_h = abs(actual_leader_h - h_follower)
 
-                d_xx = TWRx - x_follower
+                dist_m = np.sqrt(d_x ** 2 + d_y ** 2)
+                dist_nm = dist_m / 1852
 
-                if TWRx > x_follower:
-                    status = "BEHIND"
-                else:
-                    status = "AHEAD"
+                if p[0].runway == "LEBL-06R":
+                    TWRx = TWR06[0].U
+                    TWRy = TWR06[0].V
 
-                d_yy = TWRy - y_follower
+                    d_xx = TWRx - x_follower
 
-                dist_mT = np.sqrt(d_xx ** 2 + d_yy ** 2)
-                dist_nmT = dist_mT / 1852
+                    if TWRx > x_follower:
+                        status = "BEHIND"
+                    else:
+                        status = "AHEAD"
 
-                if dist_nmT >= 0.5 and status == "AHEAD" and First:
-                    distTWRcalc = dist_nmT
-                    TWR_hor_sep = dist_nm
-                    TWR_alt_diff = d_h
-                    First = False
+                    d_yy = TWRy - y_follower
+
+                    dist_mT = np.sqrt(d_xx ** 2 + d_yy ** 2)
+                    dist_nmT = dist_mT / 1852
+
+                    if dist_nmT >= 0.5 and status == "AHEAD" and First:
+                        distTWRcalc = dist_nmT
+                        TWR_hor_sep = dist_nm
+                        TWR_alt_diff = d_h
+                        First = False
 
 
-            elif p[0].runway == "LEBL-24L":
-                TWRx = TWR24[0].x
-                TWRy = TWR24[0].y
+                elif p[0].runway == "LEBL-24L":
+                    TWRx = TWR24[0].U
+                    TWRy = TWR24[0].V
 
-                d_xx = TWRx - x_follower
+                    d_xx = TWRx - x_follower
 
-                if TWRx < x_follower:
-                    status = "BEHIND"
-                else:
-                    status = "AHEAD"
+                    if TWRx < x_follower:
+                        status = "BEHIND"
+                    else:
+                        status = "AHEAD"
 
-                d_yy = TWRy - y_follower
+                    d_yy = TWRy - y_follower
 
-                dist_mT = np.sqrt(d_xx ** 2 + d_yy ** 2)
-                dist_nmT = dist_mT / 1852
+                    dist_mT = np.sqrt(d_xx ** 2 + d_yy ** 2)
+                    dist_nmT = dist_mT / 1852
 
-                if dist_nmT >= 0.5 and status == "AHEAD" and First:
-                    distTWRcalc = dist_nmT
-                    TWR_hor_sep = dist_nm
-                    TWR_alt_diff = d_h
-                    First = False
+                    if dist_nmT >= 0.5 and status == "AHEAD" and First:
+                        distTWRcalc = dist_nmT
+                        TWR_hor_sep = dist_nm
+                        TWR_alt_diff = d_h
+                        First = False
 
-            sub = subParameters()
-            sub.time = float(time_follower)
-            sub.distance_nm = float(dist_nm)
-            sub.distance_follower_tower_nm = float(dist_nmT)
-            sub.altitude_diff = float(d_h)
-            sub.ahead_or_behind_tower = status
-            param.geometric_values.append(sub)
+                sub = subParameters()
+                sub.time = float(time_follower)
+                sub.distance_nm = float(dist_nm)
+                sub.distance_follower_tower_nm = float(dist_nmT)
+                sub.altitude_diff = float(d_h)
+                sub.ahead_or_behind_tower = status
+                param.geometric_values.append(sub)
         
         param.distTWR = float(distTWRcalc)
         param.TWR_dist_diff = float(TWR_hor_sep)

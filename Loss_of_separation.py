@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 
 class SeparationLoss:
@@ -77,3 +78,54 @@ def radar(flights):
         results.append(pair_flights)
 
     return results
+
+
+
+def PrintResults(file, res):
+
+    data = []
+
+    for pair in res:
+        
+        lead, foll = pair.pair.split('-')
+
+        tma_data = {
+            'TMA_Type': [d.loss_details for d in pair.tma_details],
+            'TMA_Dist': [d.horizontal_separation_nm for d in pair.tma_details],
+            'TMA_Alt': [d.altitude_separation_ft for d in pair.tma_details],
+            'Time': [d.time for d in pair.tma_details]
+        }
+        
+        twr_data = {
+            'TWR_Type': [d.loss_details for d in pair.twr_details],
+            'TWR_Dist': [d.horizontal_separation_nm for d in pair.twr_details],
+            'Dist2TWR': [d.distance_twr_nm for d in pair.twr_details],
+            'TWR_Alt': [d.altitude_separation_ft for d in pair.twr_details],
+            'Time': [d.time for d in pair.twr_details]
+        }
+
+        df_tma = pd.DataFrame(tma_data)
+        df_twr = pd.DataFrame(twr_data)
+
+        if df_tma.empty:
+            df_tma = pd.DataFrame({'TMA_Type': ['-'], 'TMA_Dist':['-'], 'TMA_Alt': ['-'], 'Time':['-']})
+        if df_twr.empty:
+            df_twr = pd.DataFrame({'TMR_Type': ['-'], 'TMR_Dist':['-'], 'Dist2TWR':['-'], 'TMR_Alt': ['-'], 'Time':['-']})
+
+        df_pair = pd.concat([df_tma, df_twr], axis=1)
+
+        empty_row = pd.DataFrame([[np.nan] * len(df_pair.columns)], columns=df_pair.columns)
+        df_pair = pd.concat([df_pair, empty_row], ignore_index=True) #Le añado una linia en blaco despues de una pareja
+
+        df_pair.insert(0, 'Leader', lead)
+        df_pair.insert(1, 'Follower', foll)
+        df_pair.insert(2, 'Runway', pair.runway)
+        df_pair.insert(3, 'TMA loss', pair.tma_loss)
+        df_pair.insert(4, 'TWR loss', pair.twr_loss)
+
+        df_pair.loc[df_pair.index > 0, ['Leader', 'Follower', 'Runway', 'TMA loss', 'TWR loss']] = ""
+
+        data.append(df_pair)
+
+    final_df = pd.concat(data, ignore_index=True)
+    final_df.to_excel(file, index=False)

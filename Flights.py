@@ -144,6 +144,6 @@ def Generate_Flights(records: list[FlightRecord]):
 
 def AddCoords(dictionary, coords):
     for i,flights in enumerate(dictionary):
-        flights.x = coords[i].x
-        flights.y = coords[i].y
-        flights.z = coords[i].z
+        flights.x = coords[i].U
+        flights.y = coords[i].V
+        flights.z = coords[i].Height
