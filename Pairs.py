@@ -9,6 +9,10 @@ class Parameters:
         self.runway: str = ""
         self.leader_wake: str = ""
         self.follower_wake: str = ""
+        self.leader_class: str = ""
+        self.follower_class: str = ""
+        self.leader_sid: str = ""
+        self.follower_sid: str = ""
         self.distTWR: float = 0.0
         self.TWR_dist_diff: float = 0.0
         self.TWR_alt_diff: float = 0.0
@@ -64,6 +68,10 @@ def GetParameteres(pairs, TWR06, TWR24):
         param.runway = p[0].runway
         param.leader_wake = p[0].wake
         param.follower_wake = p[1].wake
+        param.leader_class = p[0].performance_class
+        param.follower_class = p[1].performance_class
+        param.leader_sid = p[0].sid_group
+        param.follower_sid = p[1].sid_group
 
         time_leader = [rec.ToD for rec in p[0].records]
         x_leader = [rec.x for rec in p[0].records]

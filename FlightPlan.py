@@ -16,6 +16,7 @@ class FlightPlan:
         self.sid: str = ""
         self.runway: str = ""
         self.sid_group: str = ""
+        self.performance_class: str = ""
 
 
 def timedelta_to_sec(td) -> int:
@@ -55,7 +56,16 @@ def read_sids(file_path24: str, file_path06: str):
     }
     return(SIDs_24L, SIDs_06R)
 
-def load_flightplan(file_path: str, sids24, sids06):
+def load_performance(filepath):
+    df_perf = pd.read_excel(filepath)
+    perf_dict = {}
+    for column in df_perf.columns:
+        models = df_perf[column].dropna().unique()
+        for model in models:
+            perf_dict[str(model).strip()] = column
+    return perf_dict
+
+def load_flightplan(file_path: str, sids24, sids06,file_path_class):
     """
     Carga planes de vuelo desde un fichero Excel (.xlsx).
     Columnas esperadas: id, Indicativo, Origen, Destino, HoraDespegue,
@@ -65,6 +75,7 @@ def load_flightplan(file_path: str, sids24, sids06):
     df = pd.read_excel(file_path)
 
     flight_plans = []
+    perf_map = load_performance(file_path_class)
 
     for _, row in df.iterrows():
         fp = FlightPlan()
@@ -80,6 +91,8 @@ def load_flightplan(file_path: str, sids24, sids06):
         fp.runway = str(row['PistaDesp']).strip()
         #print(repr(fp.runway))
         #print(repr(str(row['ProcDesp']).strip()))
+
+        fp.performance_class = perf_map.get(fp.aircraft, "R")
 
         if str(row['ProcDesp']).strip() == '-':     # Esto básicamente busca si un punto de la ruta coincide con el nombre de alguna SID.
             if fp.runway == 'LEBL-24L':             # Al encontrar el primer punto que cumpla esto guardamos resultados (SID, grupo)
@@ -169,6 +182,7 @@ def filter_flight(flights_vec, flight_plans):
     sid_groups = {fp.callsign: fp.sid_group for fp in flight_plans}
     wakes = {fp.callsign: fp.wake for fp in flight_plans}
     wake_recars = {fp.callsign: fp.wake_recar for fp in flight_plans}
+    perf_classes = {fp.callsign: fp.performance_class for fp in flight_plans}
 
     for f in flights_vec:
         cs = f.callsign
@@ -181,6 +195,8 @@ def filter_flight(flights_vec, flight_plans):
             f.sid_group = sid_groups[cs]
             f.wake = wakes[cs]
             f.wake_recar = wake_recars[cs]
+            f.performance_class = perf_classes[cs]
 
             filt_flights_vec.append(f)
     return filt_flights_vec
+

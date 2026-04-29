@@ -28,7 +28,9 @@ class TwrWakeLoss(SeparationLoss):
         self.distance_twr_nm: float = 0.0
 
 class LoALoss(SeparationLoss):
-    pass
+    def __init__(self):
+        super().__init__()
+        self.distance_twr_nm: float = 0.0
 
 class Separation:
     def __init__(self):
@@ -167,27 +169,143 @@ def wake(flights):
 
     return results
 
+def Get_LoA_cases(pair):
+    l_class = pair.leader_class  # Asegúrate de usar el nombre de atributo correcto
+    f_class = pair.follower_class
+    l_sid = pair.leader_sid
+    f_sid = pair.follower_sid
+
+    # LEADER HP
+    if l_class == "HP":
+        if f_class in ["HP", "R", "LP"]:
+            return 5 if l_sid == f_sid else 3
+        else:
+            return 3
+
+    #LEADER R
+    elif l_class == "R":
+        if f_class == "HP":
+            return 7 if l_sid == f_sid else 5
+        elif f_class in ["R", "LP"]:
+            return 5 if l_sid == f_sid else 3
+        else:
+            return 3
+
+    #LEADER LP
+    elif l_class == "LP":
+        if f_class == "HP":
+            return 8 if l_sid == f_sid else 6
+        elif f_class == "R":
+            return 6 if l_sid == f_sid else 4
+        elif f_class == "LP":
+            return 5 if l_sid == f_sid else 3
+        else:
+            return 3
+
+    #LEADER NR+
+    elif l_class == "NR+":
+        if f_class == "HP":
+            return 9 if l_sid == f_sid else 7
+        elif f_class == "R":
+            return 7 if l_sid == f_sid else 5
+        elif f_class == "LP":
+            return 6 if l_sid == f_sid else 4
+        elif f_class == "NR+":
+            return 5 if l_sid == f_sid else 3
+        else:
+            return 3
+
+    #LEADER NR-
+    elif l_class == "NR-":
+        if f_class == "HP":
+            return 10 if l_sid == f_sid else 8
+        elif f_class == "R":
+            return 8 if l_sid == f_sid else 6
+        elif f_class == "LP":
+            return 7 if l_sid == f_sid else 5
+        elif f_class == "NR+":
+            return 6 if l_sid == f_sid else 4
+        elif f_class == "NR-":
+            return 5 if l_sid == f_sid else 3
+        else:
+            return 3
+
+    # NR
+    elif l_class == "NR":
+        if f_class == "HP":
+            return 11 if l_sid == f_sid else 9
+        elif f_class == "R":
+            return 9 if l_sid == f_sid else 7
+        elif f_class == "LP":
+            return 8 if l_sid == f_sid else 6
+        elif f_class == "NR+":
+            return 7 if l_sid == f_sid else 5
+        elif f_class == "NR-":
+            return 6 if l_sid == f_sid else 4
+        else:
+            return 5 if l_sid == f_sid else 3
+
+    return None
+
+
+def LoA_separation(flights):
+
+    results = []
+
+    for pair in flights:
+        pair_flights = Separation()
+        pair_flights.pair = pair.pair
+        pair_flights.runway = pair.runway
+
+        min_sep = Get_LoA_cases(pair)
+        if min_sep is None:
+            results.append(pair_flights)
+            continue
+
+        for sample in pair.geometric_values:
+            #LoA solo en zona TWR
+            TWR_sample = (
+                    sample.distance_nm == pair.TWR_dist_diff
+                    and sample.altitude_diff == pair.TWR_alt_diff
+                    and sample.distance_follower_tower_nm == pair.distTWR
+            )
+            if TWR_sample and sample.distance_nm < min_sep:
+                pair_flights.Loa_loss = "YES"
+
+                loa_event = LoALoss()
+                loa_event.time = sample.time
+                loa_event.horizontal_separation_nm = sample.distance_nm
+                loa_event.altitude_separation_ft = sample.altitude_diff
+                loa_event.distance_twr_nm = sample.distance_follower_tower_nm
+                loa_event.loss_details = ("LOA LOSS OF SEPARATION")
+                pair_flights.LoA_details.append(loa_event)
+
+        results.append(pair_flights)
+
+    return results
 
 def _min_event(details):
     """Return the event with the minimum horizontal separation from a list of loss events."""
     return min(details, key=lambda d: d.horizontal_separation_nm)
 
 
-def PrintResults(file, res, wake_res):
+def PrintResults(file, res, wake_res, loa_res):
     wake_dict = {w.pair: w for w in wake_res}
+    loa_dict  = {l.pair: l for l in loa_res}
     rows = []
 
     for pair in res:
         wake_pair = wake_dict.get(pair.pair)
+        loa_pair  = loa_dict.get(pair.pair)
         lead, foll = pair.pair.split('-')
 
         # --- Radar TMA ---
-        tma_loss     = pair.tma_loss
-        tma_min      = _min_event(pair.tma_details) if pair.tma_details else None
+        tma_loss = pair.tma_loss
+        tma_min  = _min_event(pair.tma_details) if pair.tma_details else None
 
         # --- Radar TWR ---
-        twr_loss     = pair.twr_loss
-        twr_min      = _min_event(pair.twr_details) if pair.twr_details else None
+        twr_loss = pair.twr_loss
+        twr_min  = _min_event(pair.twr_details) if pair.twr_details else None
 
         # --- Wake TMA ---
         tma_wake_loss = wake_pair.tma_wake_loss if wake_pair else "NO"
@@ -197,36 +315,47 @@ def PrintResults(file, res, wake_res):
         twr_wake_loss = wake_pair.twr_wake_loss if wake_pair else "NO"
         twr_wake_min  = _min_event(wake_pair.twr_wake_details) if (wake_pair and wake_pair.twr_wake_details) else None
 
+        # --- LoA TWR ---
+        loa_loss = loa_pair.Loa_loss if loa_pair else "NO"
+        loa_min  = _min_event(loa_pair.LoA_details) if (loa_pair and loa_pair.LoA_details) else None
+
         row = {
-            'Leader':           lead,
-            'Follower':         foll,
-            'Runway':           pair.runway,
-            'Radar TMA Loss':   tma_loss,
-            'Radar TWR Loss':   twr_loss,
-            'TMA Wake Loss':    tma_wake_loss,
-            'TWR Wake Loss':    twr_wake_loss,
+            'Leader':         lead,
+            'Follower':       foll,
+            'Runway':         pair.runway,
+            'Radar TMA Loss': tma_loss,
+            'Radar TWR Loss': twr_loss,
+            'TMA Wake Loss':  tma_wake_loss,
+            'TWR Wake Loss':  twr_wake_loss,
+            'LoA TWR Loss':   loa_loss,
             # Radar TMA detail columns
-            'Radar TMA - Detail':       tma_min.loss_details                if tma_min else '-',
-            'Radar TMA - Min Dist (nm)':tma_min.horizontal_separation_nm    if tma_min else '-',
-            'Radar TMA - Altitude (ft)':tma_min.altitude_separation_ft      if tma_min else '-',
-            'Radar TMA - Time':         tma_min.time                        if tma_min else '-',
+            'Radar TMA - Detail':        tma_min.loss_details             if tma_min else '-',
+            'Radar TMA - Min Dist (nm)': tma_min.horizontal_separation_nm if tma_min else '-',
+            'Radar TMA - Altitude (ft)': tma_min.altitude_separation_ft   if tma_min else '-',
+            'Radar TMA - Time':          tma_min.time                     if tma_min else '-',
             # Radar TWR detail columns
-            'Radar TWR - Detail':       twr_min.loss_details                if twr_min else '-',
-            'Radar TWR - Min Dist (nm)':twr_min.horizontal_separation_nm    if twr_min else '-',
-            'Radar TWR - Altitude (ft)':twr_min.altitude_separation_ft      if twr_min else '-',
-            'Radar TWR - Time':         twr_min.time                        if twr_min else '-',
-            'Radar TWR - Dist2TWR (nm)':twr_min.distance_twr_nm             if twr_min else '-',
+            'Radar TWR - Detail':        twr_min.loss_details             if twr_min else '-',
+            'Radar TWR - Min Dist (nm)': twr_min.horizontal_separation_nm if twr_min else '-',
+            'Radar TWR - Altitude (ft)': twr_min.altitude_separation_ft   if twr_min else '-',
+            'Radar TWR - Time':          twr_min.time                     if twr_min else '-',
+            'Radar TWR - Dist2TWR (nm)': twr_min.distance_twr_nm          if twr_min else '-',
             # Wake TMA detail columns
-            'Wake TMA - Detail':        tma_wake_min.loss_details               if tma_wake_min else '-',
-            'Wake TMA - Min Dist (nm)': tma_wake_min.horizontal_separation_nm   if tma_wake_min else '-',
-            'Wake TMA - Altitude (ft)': tma_wake_min.altitude_separation_ft     if tma_wake_min else '-',
-            'Wake TMA - Time':          tma_wake_min.time                       if tma_wake_min else '-',
+            'Wake TMA - Detail':        tma_wake_min.loss_details             if tma_wake_min else '-',
+            'Wake TMA - Min Dist (nm)': tma_wake_min.horizontal_separation_nm if tma_wake_min else '-',
+            'Wake TMA - Altitude (ft)': tma_wake_min.altitude_separation_ft   if tma_wake_min else '-',
+            'Wake TMA - Time':          tma_wake_min.time                     if tma_wake_min else '-',
             # Wake TWR detail columns
-            'Wake TWR - Detail':        twr_wake_min.loss_details               if twr_wake_min else '-',
-            'Wake TWR - Min Dist (nm)': twr_wake_min.horizontal_separation_nm   if twr_wake_min else '-',
-            'Wake TWR - Altitude (ft)': twr_wake_min.altitude_separation_ft     if twr_wake_min else '-',
-            'Wake TWR - Time':          twr_wake_min.time                       if twr_wake_min else '-',
-            'Wake TWR - Dist2TWR (nm)': twr_wake_min.distance_twr_nm            if twr_wake_min else '-',
+            'Wake TWR - Detail':        twr_wake_min.loss_details             if twr_wake_min else '-',
+            'Wake TWR - Min Dist (nm)': twr_wake_min.horizontal_separation_nm if twr_wake_min else '-',
+            'Wake TWR - Altitude (ft)': twr_wake_min.altitude_separation_ft   if twr_wake_min else '-',
+            'Wake TWR - Time':          twr_wake_min.time                     if twr_wake_min else '-',
+            'Wake TWR - Dist2TWR (nm)': twr_wake_min.distance_twr_nm          if twr_wake_min else '-',
+            # LoA TWR detail columns
+            'LoA TWR - Detail':        loa_min.loss_details             if loa_min else '-',
+            'LoA TWR - Min Dist (nm)': loa_min.horizontal_separation_nm if loa_min else '-',
+            'LoA TWR - Altitude (ft)': loa_min.altitude_separation_ft   if loa_min else '-',
+            'LoA TWR - Time':          loa_min.time                     if loa_min else '-',
+            'LoA TWR - Dist2TWR (nm)': loa_min.distance_twr_nm          if loa_min else '-',
         }
         rows.append(row)
 

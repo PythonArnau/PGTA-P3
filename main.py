@@ -7,7 +7,7 @@ from FlightPlan import FlightPlan, load_flightplan, obtain_callsigns, filter_fli
 from Asterix_pos import ExtractLatLonAlt, AddAsterixCSV
 from Separation import get_consecutive_flights, calculate_separation
 from Pairs import LeaderFollower, GetParameteres
-from Loss_of_separation import radar, wake, PrintResults
+from Loss_of_separation import radar, wake, PrintResults, LoA_separation
 from Pos import Calc_Stereographical_Coords, TowerCoords
 
 # Cargar todos los records del CSV y generar flights
@@ -24,7 +24,7 @@ Flights = Generate_Flights(records)
 
 # Cargar planes de vuelo y eliminar vuelos que no hayan salido de LEBL
 SIDs24L, SIDs06R = read_sids('Tabla_misma_SID_24L.xlsx', 'Tabla_misma_SID_06R.xlsx')
-flight_plans = load_flightplan("P3_DEP_LEBL.xlsx", SIDs24L, SIDs06R)
+flight_plans = load_flightplan("P3_DEP_LEBL.xlsx", SIDs24L, SIDs06R,"Tabla_Clasificacion_aeronaves.xlsx")
 filtered_flights = filter_flight(Flights, flight_plans)
 
 # Coordenadas de las torres
@@ -41,7 +41,5 @@ pairs2 = LeaderFollower(filtered_flights)
 distances_pairs = GetParameteres(pairs2, TWR06R, TWR24L)
 radar_separation_check = radar(distances_pairs)
 wake_separation_check = wake(distances_pairs)
-for wakes in wake_separation_check:
-    if wakes.tma_wake_loss == "YES" or wakes.twr_wake_loss == "YES":
-        print(wakes.pair)
-PrintResults("RadarSeparation.xlsx", radar_separation_check, wake_separation_check)
+LoA_separation_check = LoA_separation(distances_pairs)
+PrintResults("RadarSeparation.xlsx", radar_separation_check, wake_separation_check,LoA_separation_check)
