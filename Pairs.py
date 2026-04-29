@@ -7,6 +7,8 @@ class Parameters:
         self.leader: str = ""
         self.follower: str = ""
         self.runway: str = ""
+        self.leader_wake: str = ""
+        self.follower_wake: str = ""
         self.distTWR: float = 0.0
         self.TWR_dist_diff: float = 0.0
         self.TWR_alt_diff: float = 0.0
@@ -60,6 +62,8 @@ def GetParameteres(pairs, TWR06, TWR24):
         param.leader = p[0].callsign
         param.follower = p[1].callsign
         param.runway = p[0].runway
+        param.leader_wake = p[0].wake
+        param.follower_wake = p[1].wake
 
         time_leader = [rec.ToD for rec in p[0].records]
         x_leader = [rec.x for rec in p[0].records]

@@ -7,7 +7,7 @@ from FlightPlan import FlightPlan, load_flightplan, obtain_callsigns, filter_fli
 from Asterix_pos import ExtractLatLonAlt, AddAsterixCSV
 from Separation import get_consecutive_flights, calculate_separation
 from Pairs import LeaderFollower, GetParameteres
-from Loss_of_separation import radar, PrintResults
+from Loss_of_separation import radar, wake, PrintResults
 from Pos import Calc_Stereographical_Coords, TowerCoords
 
 # Cargar todos los records del CSV y generar flights
@@ -40,19 +40,8 @@ TWR24L = TowerCoords(latTWR24.decimal_degree, lonTWR24.decimal_degree)
 pairs2 = LeaderFollower(filtered_flights)
 distances_pairs = GetParameteres(pairs2, TWR06R, TWR24L)
 radar_separation_check = radar(distances_pairs)
-PrintResults("RadarSeparation.xlsx", radar_separation_check )
-
-#manera antigua de calcular las pairs
-pairs = get_consecutive_flights(flight_plans)
-flights_dict = {f.callsign: f for f in filtered_flights}
-#print(f"Total de vuelos con datos radar: {len(flights_dict)}")
-
-all_separations = []
-for leader_fp, follower_fp in pairs:
-    if leader_fp.callsign in flights_dict and follower_fp.callsign in flights_dict:
-        leader_flight = flights_dict[leader_fp.callsign]
-        follower_flight = flights_dict[follower_fp.callsign]
-        separation = calculate_separation(leader_fp, follower_fp,leader_flight, follower_flight, TWR06R, TWR24L)
-        all_separations.append(separation)
-
-print(vars(all_separations[0]))
+wake_separation_check = wake(distances_pairs)
+for wakes in wake_separation_check:
+    if wakes.tma_wake_loss == "YES" or wakes.twr_wake_loss == "YES":
+        print(wakes.pair)
+PrintResults("RadarSeparation.xlsx", radar_separation_check, wake_separation_check)
