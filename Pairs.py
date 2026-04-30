@@ -5,7 +5,11 @@ class Parameters:
     def __init__(self):
         self.pair: str = ""
         self.leader: str = ""
+        self.sid_lead: str = ""
+        self.sid_lead_group: str = ""
         self.follower: str = ""
+        self.sid_foll: str = ""
+        self.sid_foll_group: str = ""
         self.runway: str = ""
         self.distTWR: float = 0.0
         self.TWR_dist_diff: float = 0.0
@@ -60,6 +64,10 @@ def GetParameteres(pairs, TWR06, TWR24):
         param.leader = p[0].callsign
         param.follower = p[1].callsign
         param.runway = p[0].runway
+        param.sid_lead = p[0].sid
+        param.sid_lead_group = p[0].sid_group
+        param.sid_foll = p[1].sid
+        param.sid_foll_group = p[1].sid_group
 
         time_leader = [rec.ToD for rec in p[0].records]
         x_leader = [rec.x for rec in p[0].records]

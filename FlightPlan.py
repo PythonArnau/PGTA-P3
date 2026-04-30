@@ -125,8 +125,10 @@ def load_flightplan(file_path: str, sids24, sids06):
                 found = False
                 for group, list in sids24.items():
                     for s in list:
-                        s = s.replace('-','1')
-                        if s == fp.sid:
+                        #s = s.replace('-','1')
+                        s2 = s.split('-')[0]
+                        #if s == fp.sid:
+                        if s2 in fp.sid:
                             fp.sid = str(s)
                             fp.sid_group = str(group)
                             found = True
@@ -137,8 +139,10 @@ def load_flightplan(file_path: str, sids24, sids06):
                 found = False
                 for group, list in sids06.items():
                     for s in list:
-                        s = s.replace('-','1')
-                        if s == fp.sid:
+                        #s = s.replace('-','1')
+                        s2 = s.split('-')[0]
+                        #if s == fp.sid:
+                        if s2 in fp.sid:
                             fp.sid = s
                             fp.sid_group = str(group)
                             found = True

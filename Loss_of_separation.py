@@ -37,6 +37,10 @@ def radar(flights):
         pair_flights = Separation()
         pair_flights.pair = pair.pair
         pair_flights.runway = pair.runway
+        pair_flights.sid_lead = pair.sid_lead
+        pair_flights.sid_lead_g = pair.sid_lead_group
+        pair_flights.sid_foll = pair.sid_foll
+        pair_flights.sid_foll_g = pair.sid_foll_group
 
         for sample in pair.geometric_values:
 
@@ -89,12 +93,45 @@ def PrintResults(file, res):
         
         lead, foll = pair.pair.split('-')
 
-        tma_data = {
+        dist = [d.horizontal_separation_nm for d in pair.tma_details]
+        alt = [d.altitude_separation_ft for d in pair.tma_details]
+        type = [d.loss_details for d in pair.tma_details]
+        time = [d.time for d in pair.tma_details]
+
+        if dist:
+            idx_min_dist = dist.index(min(dist))
+            idx_min_alt = alt.index(min(alt))
+
+            loss_h = min(dist)
+            loss_a = min(alt) < 1000
+
+            if loss_h and loss_a:
+
+                if idx_min_dist == idx_min_alt:
+                    idx = idx_min_dist
+                
+                else:
+                    idx = dist.index(min(dist))
+            
+            elif loss_h and not(loss_a):
+                
+                idx = dist.index(min(dist))
+
+            tma_data = {
+            'TMA_Type': type[idx],
+            'TMA_Dist': dist[idx],
+            'TMA_Alt': alt[idx],
+            'Time': time[idx]
+        }
+        
+        else:
+           tma_data = {
             'TMA_Type': [d.loss_details for d in pair.tma_details],
             'TMA_Dist': [d.horizontal_separation_nm for d in pair.tma_details],
             'TMA_Alt': [d.altitude_separation_ft for d in pair.tma_details],
             'Time': [d.time for d in pair.tma_details]
         }
+        
         
         twr_data = {
             'TWR_Type': [d.loss_details for d in pair.twr_details],
@@ -104,13 +141,13 @@ def PrintResults(file, res):
             'Time': [d.time for d in pair.twr_details]
         }
 
-        df_tma = pd.DataFrame(tma_data)
-        df_twr = pd.DataFrame(twr_data)
+        df_tma = pd.DataFrame([tma_data])
+        df_twr = pd.DataFrame([twr_data])
 
         if df_tma.empty:
             df_tma = pd.DataFrame({'TMA_Type': ['-'], 'TMA_Dist':['-'], 'TMA_Alt': ['-'], 'Time':['-']})
         if df_twr.empty:
-            df_twr = pd.DataFrame({'TMR_Type': ['-'], 'TMR_Dist':['-'], 'Dist2TWR':['-'], 'TMR_Alt': ['-'], 'Time':['-']})
+            df_twr = pd.DataFrame({'TWR_Type': ['-'], 'TWR_Dist':['-'], 'Dist2TWR':['-'], 'TMR_Alt': ['-'], 'Time':['-']})
 
         df_pair = pd.concat([df_tma, df_twr], axis=1)
 
@@ -118,12 +155,16 @@ def PrintResults(file, res):
         df_pair = pd.concat([df_pair, empty_row], ignore_index=True) #Le añado una linia en blaco despues de una pareja
 
         df_pair.insert(0, 'Leader', lead)
-        df_pair.insert(1, 'Follower', foll)
-        df_pair.insert(2, 'Runway', pair.runway)
-        df_pair.insert(3, 'TMA loss', pair.tma_loss)
-        df_pair.insert(4, 'TWR loss', pair.twr_loss)
+        df_pair.insert(1, 'Sid_lead', pair.sid_lead)
+        df_pair.insert(2, 'Sid_lead_G', pair.sid_lead_g)
+        df_pair.insert(3, 'Follower', foll)
+        df_pair.insert(4, 'Sid_foll', pair.sid_foll)
+        df_pair.insert(5, 'Sid_foll_G', pair.sid_foll_g)
+        df_pair.insert(6, 'Runway', pair.runway)
+        df_pair.insert(7, 'TMA loss', pair.tma_loss)
+        df_pair.insert(8, 'TWR loss', pair.twr_loss)
 
-        df_pair.loc[df_pair.index > 0, ['Leader', 'Follower', 'Runway', 'TMA loss', 'TWR loss']] = ""
+        #df_pair.loc[df_pair.index > 0, ['Leader', 'Follower', 'Runway', 'TMA loss', 'TWR loss']] = ""
 
         data.append(df_pair)
 
