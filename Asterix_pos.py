@@ -49,20 +49,19 @@ def ExtractLatLonAlt(dictionary):
     return lat_vec, lon_vec, alt_vec
 
 def AddAsterixCSV(csv_file:str, coords):
-    x_vec = []
-    y_vec = []
-    z_vec = []
+    x_vec = coords[0]
+    y_vec = coords[1]
 
-    for coord in coords:
-        x_vec.append(coord.U)
-        y_vec.append(coord.V)
-        z_vec.append(coord.Height)
+    #for coord in coords:
+        #x_vec.append(coord[0])
+        #y_vec.append(coord.[1])
+        
     
     df = pd.read_csv(csv_file, sep=';', decimal=',')
 
     df['x'] = x_vec
     df['y'] = y_vec
-    df['z'] = z_vec
+    
 
     df.to_csv(csv_file, sep=';', decimal=',', index=False)
 

@@ -173,10 +173,11 @@ def filter_flight(flights_vec, flight_plans):
     sid_groups = {fp.callsign: fp.sid_group for fp in flight_plans}
     wakes = {fp.callsign: fp.wake for fp in flight_plans}
     wake_recars = {fp.callsign: fp.wake_recar for fp in flight_plans}
+    aircrafts = {fp.callsign: fp.aircraft for fp in flight_plans}
 
     for f in flights_vec:
         cs = f.callsign
-        if cs in callsings_vec and (runways[cs] == "LEBL-24L" or runways[cs] == "LEBL-06R"):
+        if cs in callsings_vec and (runways[cs] == "LEBL-24L" or runways[cs] == "LEBL-06R") and (departure_times[cs]>=14400) and (departure_times[cs] < f.records[-1].ToD):
             #Le añado el departure time,... para usarlo más tarde
             f.departure_sec = departure_times[cs]
             f.route = routes[cs]
@@ -185,6 +186,7 @@ def filter_flight(flights_vec, flight_plans):
             f.sid_group = sid_groups[cs]
             f.wake = wakes[cs]
             f.wake_recar = wake_recars[cs]
+            f.aircraft = aircrafts[cs]
 
             filt_flights_vec.append(f)
     return filt_flights_vec

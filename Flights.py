@@ -1,5 +1,6 @@
 from typing import Optional
 import pandas as pd
+import numpy as np
 
 class FlightRecord:
     def __init__(self):
@@ -132,18 +133,76 @@ class Flight:
     def Add_record(self, record: FlightRecord):
         self.records.append(record)
 
+
+def howManyAC(records):
+    call = []
+    ta =[]
+    
+    for i in records:
+        if i.transponder not in ta:
+            call.append(i.callsign)
+            ta.append(i.transponder)
+    return call
+
+
 def Generate_Flights(records: list[FlightRecord]):
     # Crear un diccionario para agrupar records por callsign
     flights_dict = {}
     for i in records:
         callsign = i.callsign
+        track_num = i.transponder
         if callsign not in flights_dict:
             flights_dict[callsign] = Flight(callsign)
+            
         flights_dict[callsign].Add_record(i)
     return list(flights_dict.values())
 
+
+def Flights_with_deadreckoning(flights):
+
+    for flight in flights:
+        new_record_list = []
+        for i in range(len(flight.records) - 1):
+            r = flight.records[i]
+            r_next = flight.records[i+1]
+            
+            new_record_list.append(r)
+
+            diff = int(r_next.ToD - r.ToD)
+            if diff > 1:
+                gs_kt = float(r.GS_kt)
+                heading_deg = float(r.HDG_bds)
+                try:
+                    ivv = float(r.IVV)
+                except ValueError:
+                    ivv = ((float(r.h_ft) - float(r_next.h_ft)) / diff) * 60
+
+                gs_nm_s = gs_kt/3600
+                hdg_rad = np.radians(heading_deg)
+                ivv_s = ivv / 60
+
+                for s in range(1,diff):
+                    new_rec = FlightRecord()
+
+                    dx = (gs_nm_s * np.sin(hdg_rad) * s)
+                    dy = (gs_nm_s * np.cos(hdg_rad) * s)
+                    dh = (ivv_s * s)
+
+                    new_rec.x = r.x + dx
+                    new_rec.y = r.y + dy
+                    new_rec.h_ft = r.h_ft + dh
+                    new_rec.ToD = r.ToD + s
+                    new_rec.status = "PROJECTED"
+                    new_rec.callsign = r.callsign
+
+                    new_record_list.append(new_rec)
+                
+        new_record_list.append(flight.records[-1])
+
+        flight.records = new_record_list
+
 def AddCoords(dictionary, coords):
     for i,flights in enumerate(dictionary):
-        flights.x = coords[i].U
-        flights.y = coords[i].V
-        flights.z = coords[i].Height
+        flights.x = coords[0][i]
+        flights.y = coords[1][i]
+        
