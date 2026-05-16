@@ -9,6 +9,7 @@ from Separation import get_consecutive_flights, calculate_separation
 from Pairs import LeaderFollower, GetParameteres
 from Loss_of_separation import radar, wake, PrintResults, LoA_separation
 from Pos import Calc_Stereographical_Coords, TowerCoords
+from virajes import select_flights, detect_turn, export_turns_to_excel, export_to_kml
 
 # Cargar todos los records del CSV y generar flights
 records = load_csv("P3_04h_08h.csv")
@@ -43,3 +44,8 @@ radar_separation_check = radar(distances_pairs)
 wake_separation_check = wake(distances_pairs)
 LoA_separation_check = LoA_separation(distances_pairs)
 PrintResults("RadarSeparation.xlsx", radar_separation_check, wake_separation_check,LoA_separation_check)
+
+#Calculo de virajes
+turns_list = detect_turn(filtered_flights, 1.5, 5)
+export_turns_to_excel(turns_list,filename="assessment_virajes_LEBL.xlsx")
+export_to_kml(turns_list, filename="puntos_viraje.kml")
