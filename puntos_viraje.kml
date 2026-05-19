@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Inicios de Viraje LEBL 24L</name>
+    <Placemark>
+      <name>VLG3YR</name>
+      <description>Alt: 624.996232248635ft | RA: -12.0 | HDG: -124.453125</description>
+      <Point>
+        <coordinates>2.06761836,41.27952559,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG1265</name>
+      <description>Alt: 624.9959228222ft | RA: -12.0 | HDG: -118.125</description>
+      <Point>
+        <coordinates>2.06661616,41.27942467,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG73QE</name>
+      <description>Alt: 624.996613330079ft | RA: -10.6 | HDG: nan</description>
+      <Point>
+        <coordinates>2.0692342,41.28030142,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG4SW</name>
+      <description>Alt: 724.995969396778ft | RA: -23.5 | HDG: -120.234375</description>
+      <Point>
+        <coordinates>2.06685462,41.27963852,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG4VF</name>
+      <description>Alt: 1124.99485221011ft | RA: -23.4 | HDG: nan</description>
+      <Point>
+        <coordinates>2.06025542,41.27308172,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DLH03K</name>
+      <description>Alt: 699.997874348901ft | RA: -11.2 | HDG: -124.453125</description>
+      <Point>
+        <coordinates>2.07463268,41.28198836,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG593U</name>
+      <description>Alt: 699.996229693681ft | RA: -22.2 | HDG: -120.585938</description>
+      <Point>
+        <coordinates>2.06768474,41.27968617,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG38HJ</name>
+      <description>Alt: 849.996789677819ft | RA: -14.0 | HDG: -122.167969</description>
+      <Point>
+        <coordinates>2.06988543,41.28047875,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>IBE04RC</name>
+      <description>Alt: 874.995931103919ft | RA: -15.6 | HDG: -124.453125</description>
+      <Point>
+        <coordinates>2.06653004,41.27925094,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EJU14CG</name>
+      <description>Alt: 649.996534589139ft | RA: -11.7 | HDG: -119.53125</description>
+      <Point>
+        <coordinates>2.06888042,41.28011765,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG23TK</name>
+      <description>Alt: 949.996057375814ft | RA: -21.8 | HDG: -130.957031</description>
+      <Point>
+        <coordinates>2.06675683,41.27895726,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG7830</name>
+      <description>Alt: 724.995814735504ft | RA: -21.9 | HDG: -121.640625</description>
+      <Point>
+        <coordinates>2.06618283,41.27922787,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG6UW</name>
+      <description>Alt: 899.995357735344ft | RA: -28.5 | HDG: -131.660156</description>
+      <Point>
+        <coordinates>2.06439515,41.27834742,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG3BV</name>
+      <description>Alt: 824.995646565056ft | RA: -29.4 | HDG: -131.660156</description>
+      <Point>
+        <coordinates>2.0654561,41.27878828,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG2472</name>
+      <description>Alt: 674.995601998314ft | RA: -7.0 | HDG: -119.003906</description>
+      <Point>
+        <coordinates>2.06557705,41.27927065,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG3LK</name>
+      <description>Alt: 699.996176222075ft | RA: -7.5 | HDG: -121.464844</description>
+      <Point>
+        <coordinates>2.06746448,41.27958043,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG55PB</name>
+      <description>Alt: 749.996695782397ft | RA: -22.0 | HDG: -126.210938</description>
+      <Point>
+        <coordinates>2.06941876,41.28016123,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG56ND</name>
+      <description>Alt: 599.996415479204ft | RA: -7.6 | HDG: -116.71875</description>
+      <Point>
+        <coordinates>2.06829737,41.27971883,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG1PT</name>
+      <description>Alt: 749.99664471243ft | RA: -14.8 | HDG: -124.453125</description>
+      <Point>
+        <coordinates>2.06926879,41.28019519,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG11TT</name>
+      <description>Alt: 924.995567670802ft | RA: -11.2 | HDG: -125.683594</description>
+      <Point>
+        <coordinates>2.06498298,41.27832068,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG15SY</name>
+      <description>Alt: 724.995729193156ft | RA: -9.8 | HDG: -120.410156</description>
+      <Point>
+        <coordinates>2.06586802,41.27910749,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG7EY</name>
+      <description>Alt: 749.995555740252ft | RA: -26.4 | HDG: -125.507812</description>
+      <Point>
+        <coordinates>2.06509745,41.27858649,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG76GZ</name>
+      <description>Alt: 974.997107796311ft | RA: -19.8 | HDG: -127.089844</description>
+      <Point>
+        <coordinates>2.07084101,41.28027436,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG68LT</name>
+      <description>Alt: 599.996994998361ft | RA: -16.3 | HDG: -117.246094</description>
+      <Point>
+        <coordinates>2.07097038,41.28116871,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG5YL</name>
+      <description>Alt: 749.996108926935ft | RA: -24.8 | HDG: -126.5625</description>
+      <Point>
+        <coordinates>2.06710944,41.2793007,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYR2SY</name>
+      <description>Alt: 624.996855819229ft | RA: -11.2 | HDG: -127.089844</description>
+      <Point>
+        <coordinates>2.06977746,41.27981422,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG2QW</name>
+      <description>Alt: 724.99583305946ft | RA: -11.4 | HDG: -119.707031</description>
+      <Point>
+        <coordinates>2.06636176,41.27947773,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG3TC</name>
+      <description>Alt: 699.9966225511ft | RA: -19.3 | HDG: -122.519531</description>
+      <Point>
+        <coordinates>2.06925496,41.28029838,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG84ZE</name>
+      <description>Alt: 674.995815848073ft | RA: -9.3 | HDG: -117.421875</description>
+      <Point>
+        <coordinates>2.06614925,41.27914419,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG1YW</name>
+      <description>Alt: 674.996599958762ft | RA: -10.3 | HDG: -123.925781</description>
+      <Point>
+        <coordinates>2.06924051,41.28040874,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG6FZ</name>
+      <description>Alt: 849.995475388515ft | RA: -16.0 | HDG: -122.695312</description>
+      <Point>
+        <coordinates>2.06479973,41.27847403,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG9VG</name>
+      <description>Alt: 1074.99549927801ft | RA: -18.3 | HDG: -154.6875</description>
+      <Point>
+        <coordinates>2.06215232,41.27342454,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NSZ3DA</name>
+      <description>Alt: 499.996117927239ft | RA: -16.1 | HDG: -118.652344</description>
+      <Point>
+        <coordinates>2.0672714,41.27951656,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG94PH</name>
+      <description>Alt: 549.997273057184ft | RA: -6.4 | HDG: nan</description>
+      <Point>
+        <coordinates>2.07207055,41.28138894,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG44WK</name>
+      <description>Alt: 849.995926218321ft | RA: -14.9 | HDG: -130.078125</description>
+      <Point>
+        <coordinates>2.06637678,41.2789714,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG2GP</name>
+      <description>Alt: 799.996341143068ft | RA: -9.7 | HDG: nan</description>
+      <Point>
+        <coordinates>2.06806715,41.27976895,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG73LA</name>
+      <description>Alt: 799.997453566363ft | RA: -29.5 | HDG: -137.636719</description>
+      <Point>
+        <coordinates>2.07214211,41.28039403,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EJU86XG</name>
+      <description>Alt: 724.996340889998ft | RA: -12.4 | HDG: nan</description>
+      <Point>
+        <coordinates>2.06799364,41.27961255,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BAW47C</name>
+      <description>Alt: 724.996344086073ft | RA: -16.3 | HDG: -121.464844</description>
+      <Point>
+        <coordinates>2.0680364,41.27967607,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG5RP</name>
+      <description>Alt: 674.996454454883ft | RA: -22.7 | HDG: -127.617188</description>
+      <Point>
+        <coordinates>2.06845373,41.27979565,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG6LC</name>
+      <description>Alt: 724.996393778ft | RA: -13.4 | HDG: -121.816406</description>
+      <Point>
+        <coordinates>2.06835854,41.2799972,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG91MM</name>
+      <description>Alt: 599.996887969594ft | RA: -15.6 | HDG: -119.179688</description>
+      <Point>
+        <coordinates>2.07032397,41.28063369,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DLH98Y</name>
+      <description>Alt: 799.995746578528ft | RA: -21.1 | HDG: -128.847656</description>
+      <Point>
+        <coordinates>2.06579776,41.2788773,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DLH97F</name>
+      <description>Alt: 624.997023273967ft | RA: -20.2 | HDG: -122.34375</description>
+      <Point>
+        <coordinates>2.07089161,41.2808388,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>THY1852</name>
+      <description>Alt: 849.994366216293ft | RA: -19.7 | HDG: -131.308594</description>
+      <Point>
+        <coordinates>2.06076354,41.27643612,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG700D</name>
+      <description>Alt: 649.997388002086ft | RA: -15.3 | HDG: -121.640625</description>
+      <Point>
+        <coordinates>2.07249799,41.281434,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG6ZP</name>
+      <description>Alt: 799.99687377832ft | RA: -22.4 | HDG: -129.726562</description>
+      <Point>
+        <coordinates>2.07014809,41.28043184,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG8VX</name>
+      <description>Alt: 749.996088506893ft | RA: -8.3 | HDG: -125.15625</description>
+      <Point>
+        <coordinates>2.06713823,41.27948126,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>IBE04GZ</name>
+      <description>Alt: 774.995890924545ft | RA: -9.2 | HDG: -129.902344</description>
+      <Point>
+        <coordinates>2.06619611,41.27880984,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NSZ5528</name>
+      <description>Alt: 424.996363503005ft | RA: -7.5 | HDG: -118.828125</description>
+      <Point>
+        <coordinates>2.0682596,41.27993231,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG5WG</name>
+      <description>Alt: 724.997095692136ft | RA: -20.9 | HDG: -126.035156</description>
+      <Point>
+        <coordinates>2.07120798,41.28098311,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG45PN</name>
+      <description>Alt: 749.995772718864ft | RA: -16.2 | HDG: -121.816406</description>
+      <Point>
+        <coordinates>2.0659916,41.27910058,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG65MT</name>
+      <description>Alt: 699.995979211289ft | RA: -11.1 | HDG: -123.75</description>
+      <Point>
+        <coordinates>2.06669702,41.27925934,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>IBE2601</name>
+      <description>Alt: 574.995719285182ft | RA: -14.5 | HDG: -121.464844</description>
+      <Point>
+        <coordinates>2.06577697,41.27895483,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG93DX</name>
+      <description>Alt: 799.995666392507ft | RA: -14.0 | HDG: -122.695312</description>
+      <Point>
+        <coordinates>2.06577806,41.27931705,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SWT7TN</name>
+      <description>Alt: 599.998324106939ft | RA: -13.2 | HDG: -125.507812</description>
+      <Point>
+        <coordinates>2.07655607,41.2821331,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EJU37TW</name>
+      <description>Alt: 624.995862209843ft | RA: -13.4 | HDG: -121.289062</description>
+      <Point>
+        <coordinates>2.066279,41.27911625,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG92CD</name>
+      <description>Alt: 674.996192978728ft | RA: -21.4 | HDG: -121.640625</description>
+      <Point>
+        <coordinates>2.06746389,41.27947217,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG2974</name>
+      <description>Alt: 574.997654413444ft | RA: -8.8 | HDG: -120.761719</description>
+      <Point>
+        <coordinates>2.0737962,41.28198221,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TVF32PR</name>
+      <description>Alt: 874.995167168831ft | RA: -12.0 | HDG: -124.101562</description>
+      <Point>
+        <coordinates>2.06364032,41.2779036,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG21PG</name>
+      <description>Alt: 674.996771422342ft | RA: -22.7 | HDG: -121.816406</description>
+      <Point>
+        <coordinates>2.07002133,41.280822,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AEA38LZ</name>
+      <description>Alt: 724.995282216361ft | RA: -11.1 | HDG: -126.386719</description>
+      <Point>
+        <coordinates>2.06396306,41.27787585,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYR2889</name>
+      <description>Alt: 474.996718352447ft | RA: -16.5 | HDG: -119.882812</description>
+      <Point>
+        <coordinates>2.06968681,41.28047651,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG200Z</name>
+      <description>Alt: 774.995866813434ft | RA: -12.3 | HDG: -121.992188</description>
+      <Point>
+        <coordinates>2.06643148,41.27942295,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG57RJ</name>
+      <description>Alt: 749.995963621665ft | RA: -26.4 | HDG: -131.308594</description>
+      <Point>
+        <coordinates>2.06652282,41.2790179,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYR63PB</name>
+      <description>Alt: 599.996167575671ft | RA: -13.8 | HDG: -122.167969</description>
+      <Point>
+        <coordinates>2.06744607,41.27957747,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EWG81R</name>
+      <description>Alt: 774.996409061354ft | RA: -13.3 | HDG: -130.078125</description>
+      <Point>
+        <coordinates>2.06828467,41.27976829,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYR4WX</name>
+      <description>Alt: 674.994575117366ft | RA: -18.3 | HDG: -120.410156</description>
+      <Point>
+        <coordinates>2.06197596,41.27777628,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG5FN</name>
+      <description>Alt: 649.996621625637ft | RA: -5.2 | HDG: -118.828125</description>
+      <Point>
+        <coordinates>2.06936044,41.28049876,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG6VG</name>
+      <description>Alt: 724.996300028525ft | RA: -11.0 | HDG: -122.167969</description>
+      <Point>
+        <coordinates>2.0680136,41.27990367,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>IBE04YC</name>
+      <description>Alt: 774.997293787273ft | RA: -18.8 | HDG: -134.472656</description>
+      <Point>
+        <coordinates>2.0718283,41.28085166,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG8QR</name>
+      <description>Alt: 724.996073712243ft | RA: -13.2 | HDG: -122.167969</description>
+      <Point>
+        <coordinates>2.06714264,41.27957541,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG9FC</name>
+      <description>Alt: 674.996151466429ft | RA: -15.1 | HDG: -119.355469</description>
+      <Point>
+        <coordinates>2.06755456,41.2799067,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WMT182</name>
+      <description>Alt: 724.995501538557ft | RA: -15.6 | HDG: -121.464844</description>
+      <Point>
+        <coordinates>2.0652018,41.27911424,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NJE838T</name>
+      <description>Alt: 699.998529284412ft | RA: -8.6 | HDG: -121.289062</description>
+      <Point>
+        <coordinates>2.07804967,41.28315053,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TRA3T</name>
+      <description>Alt: 574.996831103485ft | RA: -6.8 | HDG: -119.53125</description>
+      <Point>
+        <coordinates>2.06994037,41.28026406,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>QTR138</name>
+      <description>Alt: 674.994287650956ft | RA: -15.3 | HDG: -120.9375</description>
+      <Point>
+        <coordinates>2.06093725,41.27719113,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BTX6F</name>
+      <description>Alt: 824.99837391947ft | RA: -9.0 | HDG: -121.113281</description>
+      <Point>
+        <coordinates>2.07728003,41.28303748,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYR23VU</name>
+      <description>Alt: 674.995077451024ft | RA: -11.4 | HDG: -123.398438</description>
+      <Point>
+        <coordinates>2.06360777,41.27831341,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYR98RR</name>
+      <description>Alt: 674.995876888203ft | RA: -26.7 | HDG: -131.835938</description>
+      <Point>
+        <coordinates>2.06609505,41.27867483,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LHX06E</name>
+      <description>Alt: 624.997554250072ft | RA: -17.5 | HDG: -122.695312</description>
+      <Point>
+        <coordinates>2.07324458,41.28167563,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ANE53GX</name>
+      <description>Alt: 699.995397464657ft | RA: -6.5 | HDG: -119.882812</description>
+      <Point>
+        <coordinates>2.06478594,41.27887482,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG7CV</name>
+      <description>Alt: 674.996230194966ft | RA: -13.3 | HDG: -124.980469</description>
+      <Point>
+        <coordinates>2.06775706,41.2798207,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYR26UP</name>
+      <description>Alt: 699.996239260515ft | RA: -22.6 | HDG: -122.519531</description>
+      <Point>
+        <coordinates>2.0677765,41.27980796,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYR97BB</name>
+      <description>Alt: 624.995678233906ft | RA: -25.0 | HDG: -127.617188</description>
+      <Point>
+        <coordinates>2.06558811,41.27882864,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KLM1498</name>
+      <description>Alt: 699.994722530766ft | RA: -12.7 | HDG: -123.046875</description>
+      <Point>
+        <coordinates>2.06248993,41.27802534,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WMT95Z</name>
+      <description>Alt: 724.995891224345ft | RA: -13.3 | HDG: -122.695312</description>
+      <Point>
+        <coordinates>2.06648079,41.27936436,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>IBE04LK</name>
+      <description>Alt: 749.997211749786ft | RA: -16.6 | HDG: -132.539062</description>
+      <Point>
+        <coordinates>2.07163058,41.28101776,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DAL251</name>
+      <description>Alt: 824.99542832757ft | RA: -15.6 | HDG: -122.871094</description>
+      <Point>
+        <coordinates>2.06474246,41.27862788,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WZZ17JZ</name>
+      <description>Alt: 624.994453569126ft | RA: -10.4 | HDG: -122.695312</description>
+      <Point>
+        <coordinates>2.06158178,41.27761976,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WZZ521</name>
+      <description>Alt: 774.995675944244ft | RA: -14.6 | HDG: -124.980469</description>
+      <Point>
+        <coordinates>2.06565552,41.27900629,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AEA68NT</name>
+      <description>Alt: 499.99637811702ft | RA: -5.5 | HDG: -121.113281</description>
+      <Point>
+        <coordinates>2.06832531,41.27998489,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYR2VW</name>
+      <description>Alt: 974.992481325997ft | RA: -17.1 | HDG: -126.035156</description>
+      <Point>
+        <coordinates>2.05568842,41.27548482,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VLG7KT</name>
+      <description>Alt: 674.995747086643ft | RA: -9.9 | HDG: -119.882812</description>
+      <Point>
+        <coordinates>2.0660452,41.27934846,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

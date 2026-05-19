@@ -11,6 +11,7 @@ from Loss_of_separation import radar, wake_sep, LOA_sep, PrintResults
 from Pos import Calc_Stereographical_Coords, TowerCoords
 from geo_utils2 import latlon_to_xy
 from collect_stats import getStatistics
+from virajes import detect_turn, export_turns_to_excel, export_to_kml
 
 # Cargar todos los records del CSV y generar flights
 records = load_csv("P3_04h_08h.csv")
@@ -58,7 +59,7 @@ for p in pairs2:
 #distances_pairs = GetParameteres(pairs2, TWR06R, TWR24L)
 distances_pairs = GetParameters2(pairs2, TWR06R, TWR24L)
 
-
+"""
 radar_separation_check = radar(distances_pairs)
 wake_separation_check = wake_sep(distances_pairs)
 loa_separation_check = LOA_sep(distances_pairs, "Tabla_Clasificacion_aeronaves.xlsx")
@@ -67,18 +68,9 @@ PrintResults("WakeSeparation.xlsx", wake_separation_check)
 PrintResults("LOASeparation.xlsx", loa_separation_check)
 
 getStatistics(radar_separation_check, wake_separation_check, loa_separation_check, distances_pairs, filtered_flights)
+"""
 
-#manera antigua de calcular las pairs
-pairs = get_consecutive_flights(flight_plans)
-flights_dict = {f.callsign: f for f in filtered_flights}
-#print(f"Total de vuelos con datos radar: {len(flights_dict)}")
-
-all_separations = []
-for leader_fp, follower_fp in pairs:
-    if leader_fp.callsign in flights_dict and follower_fp.callsign in flights_dict:
-        leader_flight = flights_dict[leader_fp.callsign]
-        follower_flight = flights_dict[follower_fp.callsign]
-        separation = calculate_separation(leader_fp, follower_fp,leader_flight, follower_flight, TWR06R, TWR24L)
-        all_separations.append(separation)
-
-print(vars(all_separations[0]))
+#Turn Assessment
+turns_list = detect_turn(filtered_flights, 1.5, 5)
+export_turns_to_excel(turns_list,filename="assessment_virajes_LEBL.xlsx")
+export_to_kml(turns_list, filename="puntos_viraje.kml")
