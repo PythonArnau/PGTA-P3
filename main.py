@@ -2,6 +2,8 @@ import numpy as np
 import math
 import pandas as pd
 from openpyxl import Workbook
+
+import threshold
 from Flights import FlightRecord, Flight, load_csv, Generate_Flights, AddCoords, Flights_with_deadreckoning, Flights_with_deadreckoning2, howManyAC
 from FlightPlan import FlightPlan, load_flightplan, obtain_callsigns, filter_flight, read_sids
 from Asterix_pos import ExtractLatLonAlt, AddAsterixCSV
@@ -15,6 +17,9 @@ from printTWRpos import export2kml, exportFlightPaths2kml
 from stats import count_airlines_unique, TMA_TWR_airlines, count_AC, TMA_TWR_AC, countWake, TMA_TWR_wake, countLOA, LOA_TWR
 from getexcel import getKPIs
 from NADP import NADP_definition
+from virajes import detect_turn, export_turns_to_excel, export_to_kml
+from threshold import detect_threshold, export_threshold_excel, export_threshold_kml, export_threshold_excel
+
 # Cargar todos los records del CSV y generar flights
 records = load_csv("P3_04h_08h.csv")
 
@@ -81,6 +86,17 @@ export_combined_separation_excel(
     loa_separation_check,
 )
 
+
+#Turn Assessment
+turns_list = detect_turn(filtered_flights, 1.5, 5)
+export_turns_to_excel(turns_list,filename="assessment_virajes_LEBL.xlsx")
+export_to_kml(turns_list, filename="puntos_viraje.kml")
+
+threshold_list = detect_threshold(filtered_flights)
+export_threshold_excel(threshold_list, filepath="assessment_threshold_LEBL.xlsx")
+export_threshold_kml(threshold_list, filepath="puntos_threshold.kml")
+
+"""
 airlines = count_airlines_unique(pairs2)
 TMA_rad_airl, TWR_rad_airl = TMA_TWR_airlines(radar_separation_check, airlines)
 TMA_wake_airl, TWR_wake_airl = TMA_TWR_airlines(wake_separation_check, airlines)
@@ -140,5 +156,5 @@ dicts = [
 
 getKPIs(dicts, ws)
 
-wb.save("KPIs.xlsx")
+wb.save("KPIs.xlsx")"""
 

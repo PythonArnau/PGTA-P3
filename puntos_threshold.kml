@@ -1,0 +1,1679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Threshold Crossings</name>
+
+  <Style id="style_24L">
+    <IconStyle>
+      <scale>1.0</scale>
+      <Icon><href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><scale>0.8</scale></LabelStyle>
+  </Style>
+
+  <Style id="style_06R">
+    <IconStyle>
+      <scale>1.0</scale>
+      <Icon><href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><scale>0.8</scale></LabelStyle>
+  </Style>
+
+  <Placemark>
+    <name>VLG1265</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG1265<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> OLOXO-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 18381.0 s<br/>
+      <b>IAS:</b> 162.0 kt<br/>
+      <b>Height:</b> 300 ft<br/>
+      <b>ToD:</b> 18387.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074214,41.282177,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG73QE</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG73QE<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> GRAUS-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 18562.0 s<br/>
+      <b>IAS:</b> 157.0 kt<br/>
+      <b>Height:</b> 350 ft<br/>
+      <b>ToD:</b> 18565.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074685,41.282279,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG4SW</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG4SW<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DIPES-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 18834.0 s<br/>
+      <b>IAS:</b> 162.0 kt<br/>
+      <b>Height:</b> 350 ft<br/>
+      <b>ToD:</b> 18839.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074407,41.282312,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG4VF</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG4VF<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> AGENA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 18925.0 s<br/>
+      <b>IAS:</b> 167.5 kt<br/>
+      <b>Height:</b> 387 ft<br/>
+      <b>ToD:</b> 18932.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.073977,41.282150,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG593U</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG593U<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> LOTOS-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 19111.0 s<br/>
+      <b>IAS:</b> 165.0 kt<br/>
+      <b>Height:</b> 350 ft<br/>
+      <b>ToD:</b> 19115.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074103,41.282134,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG38HJ</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG38HJ<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DALIN-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 19187.0 s<br/>
+      <b>IAS:</b> 152.5 kt<br/>
+      <b>Height:</b> 600 ft<br/>
+      <b>ToD:</b> 19193.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074249,41.282221,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>IBE04RC</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> IBE04RC<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> SENIA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 19257.0 s<br/>
+      <b>IAS:</b> 156.0 kt<br/>
+      <b>Height:</b> 431 ft<br/>
+      <b>ToD:</b> 19261.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074435,41.282156,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG23TK</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG23TK<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> LARPA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 19414.0 s<br/>
+      <b>IAS:</b> 158.5 kt<br/>
+      <b>Height:</b> 500 ft<br/>
+      <b>ToD:</b> 19421.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074638,41.282265,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG7830</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG7830<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DUQQI-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 19500.0 s<br/>
+      <b>IAS:</b> 162.8 kt<br/>
+      <b>Height:</b> 331 ft<br/>
+      <b>ToD:</b> 19509.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074586,41.282286,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG6UW</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG6UW<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> SENIA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 19570.0 s<br/>
+      <b>IAS:</b> 158.2 kt<br/>
+      <b>Height:</b> 375 ft<br/>
+      <b>ToD:</b> 19579.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.073988,41.282261,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG3BV</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG3BV<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DUQQI-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 19671.0 s<br/>
+      <b>IAS:</b> 156.0 kt<br/>
+      <b>Height:</b> 412 ft<br/>
+      <b>ToD:</b> 19676.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074417,41.282268,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG2472</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG2472<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> LOTOS-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 19747.0 s<br/>
+      <b>IAS:</b> 165.5 kt<br/>
+      <b>Height:</b> 287 ft<br/>
+      <b>ToD:</b> 19752.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074091,41.282262,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG3LK</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG3LK<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DUNES-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 19843.0 s<br/>
+      <b>IAS:</b> 157.0 kt<br/>
+      <b>Height:</b> 400 ft<br/>
+      <b>ToD:</b> 19849.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074711,41.282256,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG55PB</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG55PB<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> <br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 19944.0 s<br/>
+      <b>IAS:</b> 150.0 kt<br/>
+      <b>Height:</b> 500 ft<br/>
+      <b>ToD:</b> 19951.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074511,41.282201,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG1PT</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG1PT<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> LARPA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 20090.0 s<br/>
+      <b>IAS:</b> 152.5 kt<br/>
+      <b>Height:</b> 475 ft<br/>
+      <b>ToD:</b> 20099.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074438,41.282161,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG11TT</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG11TT<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DUQQI-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 20166.0 s<br/>
+      <b>IAS:</b> 158.5 kt<br/>
+      <b>Height:</b> 394 ft<br/>
+      <b>ToD:</b> 20174.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074668,41.282345,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG15SY</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG15SY<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> SENIA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 20267.0 s<br/>
+      <b>IAS:</b> 166.2 kt<br/>
+      <b>Height:</b> 306 ft<br/>
+      <b>ToD:</b> 20272.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074217,41.282156,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG68LT</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG68LT<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> OLOXO-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 20535.0 s<br/>
+      <b>IAS:</b> 152.0 kt<br/>
+      <b>Height:</b> 425 ft<br/>
+      <b>ToD:</b> 20540.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074508,41.282433,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG5YL</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG5YL<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> LOTOS-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 20605.0 s<br/>
+      <b>IAS:</b> 161.0 kt<br/>
+      <b>Height:</b> 400 ft<br/>
+      <b>ToD:</b> 20612.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074425,41.282303,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG2QW</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG2QW<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> LOTOS-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 20752.0 s<br/>
+      <b>IAS:</b> 162.0 kt<br/>
+      <b>Height:</b> 331 ft<br/>
+      <b>ToD:</b> 20755.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074669,41.282412,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG3TC</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG3TC<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DUQQI-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 20818.0 s<br/>
+      <b>IAS:</b> 148.0 kt<br/>
+      <b>Height:</b> 475 ft<br/>
+      <b>ToD:</b> 20830.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074355,41.282181,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG84ZE</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG84ZE<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> NATPI-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 20914.0 s<br/>
+      <b>IAS:</b> 162.8 kt<br/>
+      <b>Height:</b> 281 ft<br/>
+      <b>ToD:</b> 20923.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074528,41.282183,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG1YW</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG1YW<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> AGENA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 20989.0 s<br/>
+      <b>IAS:</b> 158.0 kt<br/>
+      <b>Height:</b> 412 ft<br/>
+      <b>ToD:</b> 20998.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074590,41.282466,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG6FZ</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG6FZ<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DUQQI-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 21096.0 s<br/>
+      <b>IAS:</b> 161.0 kt<br/>
+      <b>Height:</b> 325 ft<br/>
+      <b>ToD:</b> 21101.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074732,41.282284,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG9VG</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG9VG<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> AGENA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 21156.0 s<br/>
+      <b>IAS:</b> 156.8 kt<br/>
+      <b>Height:</b> 406 ft<br/>
+      <b>ToD:</b> 21163.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074213,41.282120,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG94PH</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG94PH<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> AGENA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 21242.0 s<br/>
+      <b>IAS:</b> 161.8 kt<br/>
+      <b>Height:</b> 462 ft<br/>
+      <b>ToD:</b> 21249.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.073912,41.282066,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG44WK</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG44WK<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> OLOXO-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 21318.0 s<br/>
+      <b>IAS:</b> 155.8 kt<br/>
+      <b>Height:</b> 431 ft<br/>
+      <b>ToD:</b> 21326.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074143,41.282184,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG2GP</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG2GP<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> LARPA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 21388.0 s<br/>
+      <b>IAS:</b> 156.0 kt<br/>
+      <b>Height:</b> 450 ft<br/>
+      <b>ToD:</b> 21396.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074168,41.282189,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>BAW47C</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> BAW47C<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DUQQI-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 21621.0 s<br/>
+      <b>IAS:</b> 150.0 kt<br/>
+      <b>Height:</b> 400 ft<br/>
+      <b>ToD:</b> 21627.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074810,41.282270,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG5RP</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG5RP<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> OLOXO-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 21722.0 s<br/>
+      <b>IAS:</b> 152.5 kt<br/>
+      <b>Height:</b> 437 ft<br/>
+      <b>ToD:</b> 21728.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074395,41.282239,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG6LC</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG6LC<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DALIN-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 21803.0 s<br/>
+      <b>IAS:</b> 157.2 kt<br/>
+      <b>Height:</b> 394 ft<br/>
+      <b>ToD:</b> 21804.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074598,41.282331,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>DLH98Y</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> DLH98Y<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> AGENA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 21939.0 s<br/>
+      <b>IAS:</b> 160.5 kt<br/>
+      <b>Height:</b> 350 ft<br/>
+      <b>ToD:</b> 21945.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074778,41.282347,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>DLH97F</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> DLH97F<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DALIN-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 22025.0 s<br/>
+      <b>IAS:</b> 155.0 kt<br/>
+      <b>Height:</b> 475 ft<br/>
+      <b>ToD:</b> 22030.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074509,41.282242,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG700D</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG700D<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> AGENA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 22227.0 s<br/>
+      <b>IAS:</b> 156.0 kt<br/>
+      <b>Height:</b> 550 ft<br/>
+      <b>ToD:</b> 22232.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074291,41.282102,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG6ZP</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG6ZP<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> OLOXO-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 22328.0 s<br/>
+      <b>IAS:</b> 152.0 kt<br/>
+      <b>Height:</b> 581 ft<br/>
+      <b>ToD:</b> 22333.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074270,41.282199,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG8VX</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG8VX<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DIPES-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 22479.0 s<br/>
+      <b>IAS:</b> 163.0 kt<br/>
+      <b>Height:</b> 350 ft<br/>
+      <b>ToD:</b> 22486.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074503,41.282231,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>IBE04GZ</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> IBE04GZ<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> SENIA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 22545.0 s<br/>
+      <b>IAS:</b> 158.0 kt<br/>
+      <b>Height:</b> 337 ft<br/>
+      <b>ToD:</b> 22552.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074805,41.282323,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG5WG</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG5WG<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DUQQI-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 22812.0 s<br/>
+      <b>IAS:</b> 144.0 kt<br/>
+      <b>Height:</b> 550 ft<br/>
+      <b>ToD:</b> 22817.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074480,41.282379,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG45PN</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG45PN<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> AGENA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 22898.0 s<br/>
+      <b>IAS:</b> 161.5 kt<br/>
+      <b>Height:</b> 325 ft<br/>
+      <b>ToD:</b> 22908.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074217,41.282133,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG93DX</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG93DX<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> LARPA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 23266.0 s<br/>
+      <b>IAS:</b> 159.0 kt<br/>
+      <b>Height:</b> 381 ft<br/>
+      <b>ToD:</b> 23272.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074052,41.282157,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>EJU37TW</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> EJU37TW<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> NATPI-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 23478.0 s<br/>
+      <b>IAS:</b> 157.8 kt<br/>
+      <b>Height:</b> 294 ft<br/>
+      <b>ToD:</b> 23484.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074405,41.282141,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG2974</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG2974<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> NATPI-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 23665.0 s<br/>
+      <b>IAS:</b> 148.8 kt<br/>
+      <b>Height:</b> 537 ft<br/>
+      <b>ToD:</b> 23671.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074663,41.282298,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>TVF32PR</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> TVF32PR<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> OLOXO-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 24239.0 s<br/>
+      <b>IAS:</b> 166.0 kt<br/>
+      <b>Height:</b> 350 ft<br/>
+      <b>ToD:</b> 24248.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074657,41.282199,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG21PG</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG21PG<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> LOTOS-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 24365.0 s<br/>
+      <b>IAS:</b> 153.8 kt<br/>
+      <b>Height:</b> 462 ft<br/>
+      <b>ToD:</b> 24374.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074452,41.282367,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AEA38LZ</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> AEA38LZ<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> LARPA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 24522.0 s<br/>
+      <b>IAS:</b> 161.0 kt<br/>
+      <b>Height:</b> 275 ft<br/>
+      <b>ToD:</b> 24523.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074761,41.282201,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>RYR2889</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> RYR2889<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> LARPA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 24643.0 s<br/>
+      <b>IAS:</b> 159.8 kt<br/>
+      <b>Height:</b> 287 ft<br/>
+      <b>ToD:</b> 24650.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074173,41.282166,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG200Z</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG200Z<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> LARPA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 24754.0 s<br/>
+      <b>IAS:</b> 163.2 kt<br/>
+      <b>Height:</b> 325 ft<br/>
+      <b>ToD:</b> 24762.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074654,41.282351,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG57RJ</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG57RJ<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DIPES-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 24829.0 s<br/>
+      <b>IAS:</b> 158.5 kt<br/>
+      <b>Height:</b> 362 ft<br/>
+      <b>ToD:</b> 24834.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074386,41.282188,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>EWG81R</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> EWG81R<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> AGENA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 25016.0 s<br/>
+      <b>IAS:</b> 156.0 kt<br/>
+      <b>Height:</b> 444 ft<br/>
+      <b>ToD:</b> 25020.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074264,41.282155,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>RYR4WX</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> RYR4WX<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> OLOXO-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 25435.0 s<br/>
+      <b>IAS:</b> 158.5 kt<br/>
+      <b>Height:</b> 237 ft<br/>
+      <b>ToD:</b> 25440.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074703,41.282351,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG5FN</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG5FN<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> NATPI-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 25536.0 s<br/>
+      <b>IAS:</b> 163.2 kt<br/>
+      <b>Height:</b> 400 ft<br/>
+      <b>ToD:</b> 25541.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.073917,41.282053,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG6VG</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG6VG<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DUNES-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 25637.0 s<br/>
+      <b>IAS:</b> 160.8 kt<br/>
+      <b>Height:</b> 419 ft<br/>
+      <b>ToD:</b> 25639.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074242,41.282244,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG8QR</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG8QR<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> LOTOS-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 25995.0 s<br/>
+      <b>IAS:</b> 162.0 kt<br/>
+      <b>Height:</b> 350 ft<br/>
+      <b>ToD:</b> 26001.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074303,41.282204,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG9FC</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG9FC<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> GRAUS-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 26071.0 s<br/>
+      <b>IAS:</b> 162.8 kt<br/>
+      <b>Height:</b> 344 ft<br/>
+      <b>ToD:</b> 26074.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.073947,41.282193,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>WMT182</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> WMT182<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DIPES-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 26172.0 s<br/>
+      <b>IAS:</b> 168.5 kt<br/>
+      <b>Height:</b> 237 ft<br/>
+      <b>ToD:</b> 26175.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074679,41.282422,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>QTR138</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> QTR138<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DIPES-C<br/>
+      <b>Wake:</b> Pesada<br/>
+      <b>Dep. Time:</b> 26637.0 s<br/>
+      <b>IAS:</b> 168.0 kt<br/>
+      <b>Height:</b> 162 ft<br/>
+      <b>ToD:</b> 26643.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074336,41.282169,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>RYR23VU</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> RYR23VU<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> SENIA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 26905.0 s<br/>
+      <b>IAS:</b> 165.0 kt<br/>
+      <b>Height:</b> 212 ft<br/>
+      <b>ToD:</b> 26909.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.073831,41.282134,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>ANE53GX</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> ANE53GX<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DUQQI-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 27163.0 s<br/>
+      <b>IAS:</b> 163.0 kt<br/>
+      <b>Height:</b> 262 ft<br/>
+      <b>ToD:</b> 27166.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.073983,41.282132,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG7CV</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG7CV<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> LOTOS-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 27279.0 s<br/>
+      <b>IAS:</b> 164.8 kt<br/>
+      <b>Height:</b> 325 ft<br/>
+      <b>ToD:</b> 27285.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074229,41.282196,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>RYR26UP</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> RYR26UP<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DUQQI-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 27471.0 s<br/>
+      <b>IAS:</b> 165.2 kt<br/>
+      <b>Height:</b> 360 ft<br/>
+      <b>ToD:</b> 27476.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074448,41.282262,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>RYR97BB</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> RYR97BB<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> AGENA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 27567.0 s<br/>
+      <b>IAS:</b> 171.4 kt<br/>
+      <b>Height:</b> 206 ft<br/>
+      <b>ToD:</b> 27570.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074296,41.282131,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>KLM1498</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> KLM1498<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DUQQI-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 27643.0 s<br/>
+      <b>IAS:</b> 159.8 kt<br/>
+      <b>Height:</b> 162 ft<br/>
+      <b>ToD:</b> 27662.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.073953,41.282225,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>WMT95Z</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> WMT95Z<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> AGENA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 27744.0 s<br/>
+      <b>IAS:</b> 162.0 kt<br/>
+      <b>Height:</b> 400 ft<br/>
+      <b>ToD:</b> 27755.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.073907,41.282056,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>IBE04LK</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> IBE04LK<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> SENIA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 27871.0 s<br/>
+      <b>IAS:</b> 152.0 kt<br/>
+      <b>Height:</b> 600 ft<br/>
+      <b>ToD:</b> 27876.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074014,41.282197,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>WZZ17JZ</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> WZZ17JZ<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> AGENA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 28245.0 s<br/>
+      <b>IAS:</b> 157.0 kt<br/>
+      <b>Height:</b> 212 ft<br/>
+      <b>ToD:</b> 28252.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074134,41.282196,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>WZZ521</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> WZZ521<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> AGENA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 28331.0 s<br/>
+      <b>IAS:</b> 166.5 kt<br/>
+      <b>Height:</b> 387 ft<br/>
+      <b>ToD:</b> 28337.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074136,41.282234,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AEA68NT</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> AEA68NT<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> LARPA-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 28437.0 s<br/>
+      <b>IAS:</b> 157.5 kt<br/>
+      <b>Height:</b> 262 ft<br/>
+      <b>ToD:</b> 28439.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074568,41.282319,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>RYR2VW</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> RYR2VW<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> DALIN-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 28518.0 s<br/>
+      <b>IAS:</b> 177.8 kt<br/>
+      <b>Height:</b> 69 ft<br/>
+      <b>ToD:</b> 28523.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074478,41.282489,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG7KT</name>
+    <styleUrl>#style_24L</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG7KT<br/>
+      <b>Runway:</b> LEBL-24L<br/>
+      <b>SID:</b> LOTOS-C<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 28786.0 s<br/>
+      <b>IAS:</b> 162.5 kt<br/>
+      <b>Height:</b> 306 ft<br/>
+      <b>ToD:</b> 28789.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.074442,41.282332,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>RYR1FB</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> RYR1FB<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> DALIN-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 14499.0 s<br/>
+      <b>IAS:</b> 163.0 kt<br/>
+      <b>Height:</b> 225 ft<br/>
+      <b>ToD:</b> 14508.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103484,41.292114,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG6152</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG6152<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> LARPA-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 14644.0 s<br/>
+      <b>IAS:</b> 156.0 kt<br/>
+      <b>Height:</b> 400 ft<br/>
+      <b>ToD:</b> 14654.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103997,41.292463,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG9YD</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG9YD<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> DALIN-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 14755.0 s<br/>
+      <b>IAS:</b> 166.0 kt<br/>
+      <b>Height:</b> 675 ft<br/>
+      <b>ToD:</b> 14763.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.102903,41.292147,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>RYR28RR</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> RYR28RR<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> DIPES-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 14865.0 s<br/>
+      <b>IAS:</b> 158.0 kt<br/>
+      <b>Height:</b> 338 ft<br/>
+      <b>ToD:</b> 14873.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103739,41.292108,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>RYR91MD</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> RYR91MD<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> LOTOS-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 14966.0 s<br/>
+      <b>IAS:</b> 168.0 kt<br/>
+      <b>Height:</b> 200 ft<br/>
+      <b>ToD:</b> 14971.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103049,41.292011,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>RYR699N</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> RYR699N<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> NATPI-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 15056.0 s<br/>
+      <b>IAS:</b> 168.0 kt<br/>
+      <b>Height:</b> 338 ft<br/>
+      <b>ToD:</b> 15065.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103641,41.292046,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG53PC</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG53PC<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> DIPES-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 15136.0 s<br/>
+      <b>IAS:</b> 161.0 kt<br/>
+      <b>Height:</b> 400 ft<br/>
+      <b>ToD:</b> 15143.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103547,41.292088,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>SWR7YT</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> SWR7YT<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> DALIN-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 15237.0 s<br/>
+      <b>IAS:</b> 149.0 kt<br/>
+      <b>Height:</b> 650 ft<br/>
+      <b>ToD:</b> 15243.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.104181,41.292194,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>RYR32FE</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> RYR32FE<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> AGENA-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 15337.0 s<br/>
+      <b>IAS:</b> 160.0 kt<br/>
+      <b>Height:</b> 317 ft<br/>
+      <b>ToD:</b> 15344.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103927,41.292174,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>RYR57ZC</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> RYR57ZC<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> LARPA-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 15428.0 s<br/>
+      <b>IAS:</b> 158.7 kt<br/>
+      <b>Height:</b> 358 ft<br/>
+      <b>ToD:</b> 15437.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103834,41.292144,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG1510</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG1510<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> DALIN-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 15508.0 s<br/>
+      <b>IAS:</b> 157.0 kt<br/>
+      <b>Height:</b> 625 ft<br/>
+      <b>ToD:</b> 15517.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103799,41.292130,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG8FU</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG8FU<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> LOBAR-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 15684.0 s<br/>
+      <b>IAS:</b> 159.0 kt<br/>
+      <b>Height:</b> 438 ft<br/>
+      <b>ToD:</b> 15693.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103339,41.292208,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>ITY075</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> ITY075<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> DIPES-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 15890.0 s<br/>
+      <b>IAS:</b> 139.0 kt<br/>
+      <b>Height:</b> 594 ft<br/>
+      <b>ToD:</b> 15899.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103595,41.292148,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>RYR2A</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> RYR2A<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> DUNES-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 15980.0 s<br/>
+      <b>IAS:</b> 158.0 kt<br/>
+      <b>Height:</b> 313 ft<br/>
+      <b>ToD:</b> 15988.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103694,41.292162,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>TVF32ER</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> TVF32ER<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> OLOXO-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 16071.0 s<br/>
+      <b>IAS:</b> 144.0 kt<br/>
+      <b>Height:</b> 700 ft<br/>
+      <b>ToD:</b> 16082.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103657,41.292289,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG911N</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG911N<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> AGENA-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 16176.0 s<br/>
+      <b>IAS:</b> 160.7 kt<br/>
+      <b>Height:</b> 467 ft<br/>
+      <b>ToD:</b> 16184.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103185,41.291975,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>TAP1041</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> TAP1041<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> SENIA-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 16262.0 s<br/>
+      <b>IAS:</b> 159.0 kt<br/>
+      <b>Height:</b> 450 ft<br/>
+      <b>ToD:</b> 16269.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103462,41.292293,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>RYR2VR</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> RYR2VR<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> LOTOS-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 16362.0 s<br/>
+      <b>IAS:</b> 172.0 kt<br/>
+      <b>Height:</b> 200 ft<br/>
+      <b>ToD:</b> 16369.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103084,41.292079,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>KLM73T</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> KLM73T<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> OLOXO-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 16569.0 s<br/>
+      <b>IAS:</b> 165.8 kt<br/>
+      <b>Height:</b> 263 ft<br/>
+      <b>ToD:</b> 16574.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103511,41.291996,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AFR32SN</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> AFR32SN<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> OLOXO-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 16674.0 s<br/>
+      <b>IAS:</b> 160.0 kt<br/>
+      <b>Height:</b> 463 ft<br/>
+      <b>ToD:</b> 16683.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103589,41.292226,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG8SJ</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG8SJ<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> GRAUS-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 16815.0 s<br/>
+      <b>IAS:</b> 168.5 kt<br/>
+      <b>Height:</b> 363 ft<br/>
+      <b>ToD:</b> 16823.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103629,41.292145,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>EJU73YK</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> EJU73YK<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> NATPI-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 17117.0 s<br/>
+      <b>IAS:</b> 156.5 kt<br/>
+      <b>Height:</b> 394 ft<br/>
+      <b>ToD:</b> 17123.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103691,41.292328,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VLG365N</name>
+    <styleUrl>#style_06R</styleUrl>
+    <description><![CDATA[
+      <b>Flight:</b> VLG365N<br/>
+      <b>Runway:</b> LEBL-06R<br/>
+      <b>SID:</b> DALIN-R<br/>
+      <b>Wake:</b> Media<br/>
+      <b>Dep. Time:</b> 17510.0 s<br/>
+      <b>IAS:</b> 162.0 kt<br/>
+      <b>Height:</b> 375 ft<br/>
+      <b>ToD:</b> 17516.0 s<br/>
+    ]]></description>
+    <Point>
+      <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>2.103100,41.292045,0</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>
